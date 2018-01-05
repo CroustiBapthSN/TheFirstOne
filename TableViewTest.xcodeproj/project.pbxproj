@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4445A2871FFB84010082A179 /* PersonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4445A2861FFB84010082A179 /* PersonTest.m */; };
+		446E3CCF1FDACE4500AE99D7 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 446E3CCE1FDACE4500AE99D7 /* Person.m */; };
 		44F54F011FC851B400FB0ACA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F54F001FC851B400FB0ACA /* AppDelegate.m */; };
 		44F54F041FC851B400FB0ACA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F54F031FC851B400FB0ACA /* ViewController.m */; };
 		44F54F071FC851B400FB0ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F54F051FC851B400FB0ACA /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 		44F54F0F1FC851B400FB0ACA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F54F0E1FC851B400FB0ACA /* main.m */; };
 		44F54F191FC851B400FB0ACA /* TableViewTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F54F181FC851B400FB0ACA /* TableViewTestTests.m */; };
 		44F54F241FC851B400FB0ACA /* TableViewTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F54F231FC851B400FB0ACA /* TableViewTestUITests.m */; };
+		44F54F331FC864D900FB0ACA /* NameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F54F321FC864D900FB0ACA /* NameTableViewCell.m */; };
+		44F54F371FC8720400FB0ACA /* TableViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F54F361FC8720400FB0ACA /* TableViewTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4445A2861FFB84010082A179 /* PersonTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonTest.m; sourceTree = "<group>"; };
+		446E3CCD1FDACE4500AE99D7 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		446E3CCE1FDACE4500AE99D7 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		44F54EFC1FC851B400FB0ACA /* TableViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F54EFF1FC851B400FB0ACA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		44F54F001FC851B400FB0ACA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +58,10 @@
 		44F54F1F1FC851B400FB0ACA /* TableViewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F54F231FC851B400FB0ACA /* TableViewTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewTestUITests.m; sourceTree = "<group>"; };
 		44F54F251FC851B400FB0ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44F54F311FC864D900FB0ACA /* NameTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameTableViewCell.h; sourceTree = "<group>"; };
+		44F54F321FC864D900FB0ACA /* NameTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NameTableViewCell.m; sourceTree = "<group>"; };
+		44F54F351FC8720400FB0ACA /* TableViewTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewTest.h; sourceTree = "<group>"; };
+		44F54F361FC8720400FB0ACA /* TableViewTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +89,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4411EE6C1FD166AD004F9E98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44F54F021FC851B400FB0ACA /* ViewController.h */,
+				44F54F031FC851B400FB0ACA /* ViewController.m */,
+				44F54F351FC8720400FB0ACA /* TableViewTest.h */,
+				44F54F361FC8720400FB0ACA /* TableViewTest.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4411EE6D1FD166C9004F9E98 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44F54F311FC864D900FB0ACA /* NameTableViewCell.h */,
+				44F54F321FC864D900FB0ACA /* NameTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4411EE6E1FD166DD004F9E98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				446E3CCD1FDACE4500AE99D7 /* Person.h */,
+				446E3CCE1FDACE4500AE99D7 /* Person.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		44F54EF31FC851B400FB0ACA = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +141,9 @@
 		44F54EFE1FC851B400FB0ACA /* TableViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				44F54F341FC864E600FB0ACA /* Classes */,
 				44F54EFF1FC851B400FB0ACA /* AppDelegate.h */,
 				44F54F001FC851B400FB0ACA /* AppDelegate.m */,
-				44F54F021FC851B400FB0ACA /* ViewController.h */,
-				44F54F031FC851B400FB0ACA /* ViewController.m */,
 				44F54F051FC851B400FB0ACA /* Main.storyboard */,
 				44F54F081FC851B400FB0ACA /* Assets.xcassets */,
 				44F54F0A1FC851B400FB0ACA /* LaunchScreen.storyboard */,
@@ -117,8 +156,9 @@
 		44F54F171FC851B400FB0ACA /* TableViewTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				44F54F181FC851B400FB0ACA /* TableViewTestTests.m */,
 				44F54F1A1FC851B400FB0ACA /* Info.plist */,
+				44F54F181FC851B400FB0ACA /* TableViewTestTests.m */,
+				4445A2861FFB84010082A179 /* PersonTest.m */,
 			);
 			path = TableViewTestTests;
 			sourceTree = "<group>";
@@ -130,6 +170,16 @@
 				44F54F251FC851B400FB0ACA /* Info.plist */,
 			);
 			path = TableViewTestUITests;
+			sourceTree = "<group>";
+		};
+		44F54F341FC864E600FB0ACA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4411EE6E1FD166DD004F9E98 /* Model */,
+				4411EE6D1FD166C9004F9E98 /* Cell */,
+				4411EE6C1FD166AD004F9E98 /* View */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +316,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				44F54F041FC851B400FB0ACA /* ViewController.m in Sources */,
+				446E3CCF1FDACE4500AE99D7 /* Person.m in Sources */,
+				44F54F371FC8720400FB0ACA /* TableViewTest.m in Sources */,
 				44F54F0F1FC851B400FB0ACA /* main.m in Sources */,
+				44F54F331FC864D900FB0ACA /* NameTableViewCell.m in Sources */,
 				44F54F011FC851B400FB0ACA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4445A2871FFB84010082A179 /* PersonTest.m in Sources */,
 				44F54F191FC851B400FB0ACA /* TableViewTestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

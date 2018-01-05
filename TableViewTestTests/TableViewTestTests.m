@@ -7,8 +7,14 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ViewController.h"
+#import "Person.h"
+
 
 @interface TableViewTestTests : XCTestCase
+
+@property ViewController *vcToTest;
+@property UIStoryboard *storyToTest;
 
 @end
 
@@ -17,11 +23,21 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    _vcToTest = ([storyboard.instantiateInitialViewController isKindOfClass:[ViewController class]]) ? (ViewController *)_vcToTest : nil;
+    //_vcToTest = [storyboard asClass:[ViewController class]];
+
+    
+    //UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    //_vcToTest = storyboard.instantiateInitialViewController;
+
+  
 }
 
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
+    _vcToTest = nil;
 }
 
 - (void)testExample {
@@ -35,5 +51,28 @@
         // Put the code you want to measure the time of here.
     }];
 }
+
+- (void)testLabelChangeWin{
+    UIView *s = _vcToTest.view;
+    [_vcToTest changeLabel:2];
+    XCTAssertEqualObjects(_vcToTest.testLabel.text, @"gagner");
+}
+
+- (void)testLabelChangeLose{
+    UIView *s = _vcToTest.view;
+    [_vcToTest changeLabel:0];
+    XCTAssertEqual(_vcToTest.testLabel.text, @"perdu");
+}
+
+- (void)testOnView{
+    Person *person = [[Person alloc]init];
+    person.nom = @"HURIER";
+    person.age = 22;    
+}
+
+- (id) asClass:(Class)aClass{
+    return ([self isKindOfClass:aClass]) ? self : nil;
+}
+
 
 @end
