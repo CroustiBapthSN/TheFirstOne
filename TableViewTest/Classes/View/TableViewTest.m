@@ -38,8 +38,6 @@ Person * nameIt;
         nameIt.age = _inputZoneAge.text.intValue;
         CGColorRef colorRef = _inputZoneName.backgroundColor.CGColor;
         nameIt.color = [CIColor colorWithCGColor:colorRef].stringRepresentation;
-
-        //nameIt.color = [myColor description];
         [_delegate addToList:nameIt];
     }
 

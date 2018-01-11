@@ -64,6 +64,10 @@
     XCTAssertEqual(_vcToTest.testLabel.text, @"perdu");
 }
 
+- (void) testChangeLabel{
+    
+}
+
 - (void)testOnView{
     Person *person = [[Person alloc]init];
     person.nom = @"HURIER";
