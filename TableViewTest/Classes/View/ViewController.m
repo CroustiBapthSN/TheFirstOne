@@ -14,7 +14,6 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *nameTableView;
 @property (weak, nonatomic) IBOutlet UILabel *ageLabel;
-@property (weak, nonatomic) IBOutlet UILabel *test;
 
 
 
