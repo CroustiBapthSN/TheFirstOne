@@ -84,13 +84,4 @@ NSMutableArray * peoples ;
     return moyenne;
 }
 
-- (void)changeLabel:(NSInteger *)score{
-    if (score > 0) {
-        _testLabel.text = @"gagner";
-    }
-    else{
-        _testLabel.text = @"perdu";
-    }
-}
-
 @end

@@ -12,7 +12,6 @@
 @interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, protocoleDelegateTest>
 
 @property (nonatomic,weak) NSMutableArray * peoples;
-@property (nonatomic,weak) IBOutlet UILabel *testLabel;
 
 - (int)moyenneAge:(NSMutableArray*)peoples;
 - (void)changeLabel:(NSInteger*)score;

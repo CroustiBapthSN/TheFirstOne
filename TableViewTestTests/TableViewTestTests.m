@@ -52,22 +52,6 @@
     }];
 }
 
-- (void)testLabelChangeWin{
-    UIView *s = _vcToTest.view;
-    [_vcToTest changeLabel:2];
-    XCTAssertEqualObjects(_vcToTest.testLabel.text, @"gagner");
-}
-
-- (void)testLabelChangeLose{
-    UIView *s = _vcToTest.view;
-    [_vcToTest changeLabel:0];
-    XCTAssertEqual(_vcToTest.testLabel.text, @"perdu");
-}
-
-- (void) testChangeLabel{
-    
-}
-
 - (void)testOnView{
     Person *person = [[Person alloc]init];
     person.nom = @"HURIER";
