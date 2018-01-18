@@ -213,4 +213,5 @@
             <point key="canvasLocation" x="-105" y="9"/>
         </scene>
     </scenes>
+    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>

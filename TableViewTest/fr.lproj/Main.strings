@@ -1,0 +1,36 @@
+
+/* Class = "UIBarButtonItem"; title = "Default"; ObjectID = "6r9-Ja-MwK"; */
+"6r9-Ja-MwK.title" = "Default";
+
+/* Class = "UILabel"; text = "Entez votre age :"; ObjectID = "9P4-Bd-vjT"; */
+"9P4-Bd-vjT.text" = "Entez votre age :";
+
+/* Class = "UIButton"; normalTitle = "S'enregistrer"; ObjectID = "9r8-dh-Ebf"; */
+"9r8-dh-Ebf.normalTitle" = "S'enregistrer";
+
+/* Class = "UILabel"; text = "Entez votre Prenom :"; ObjectID = "LEI-6p-9XP"; */
+"LEI-6p-9XP.text" = "Entez votre Prenom :";
+
+/* Class = "UILabel"; text = "Entez votre Nom :"; ObjectID = "NGg-bW-DEq"; */
+"NGg-bW-DEq.text" = "Entez votre Nom :";
+
+/* Class = "UIBarButtonItem"; title = "Vert"; ObjectID = "ZPS-ji-Hzi"; */
+"ZPS-ji-Hzi.title" = "Vert";
+
+/* Class = "UIButton"; normalTitle = "S'enregistrer"; ObjectID = "eOv-NM-ebe"; */
+"eOv-NM-ebe.normalTitle" = "S'enregistrer";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lB2-iw-TfA"; */
+"lB2-iw-TfA.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Rouge"; ObjectID = "ncb-3c-Gl7"; */
+"ncb-3c-Gl7.title" = "Rouge";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "off-WD-v9O"; */
+"off-WD-v9O.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rKs-yu-shk"; */
+"rKs-yu-shk.text" = "Label";
+
+/* Class = "UILabel"; text = "Age moyen : "; ObjectID = "rd0-ja-mey"; */
+"rd0-ja-mey.text" = "Age moyen : ";
