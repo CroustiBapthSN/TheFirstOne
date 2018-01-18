@@ -47,7 +47,6 @@ Person * nameIt;
     _inputZoneName.backgroundColor = [UIColor grayColor];
     _inputZoneFirstName.backgroundColor = [UIColor grayColor];
     _inputZoneAge.backgroundColor = [UIColor grayColor];
-    nameIt.color = @"grayColor";
     
 }
 
@@ -55,14 +54,12 @@ Person * nameIt;
     _inputZoneName.backgroundColor = [UIColor redColor];
     _inputZoneFirstName.backgroundColor = [UIColor redColor];
     _inputZoneAge.backgroundColor = [UIColor redColor];
-    nameIt.color = @"redColor";
 }
 
 - (IBAction)ChangeGreenColor:(id)sender {
     _inputZoneName.backgroundColor = [UIColor greenColor];
     _inputZoneFirstName.backgroundColor = [UIColor greenColor];
     _inputZoneAge.backgroundColor = [UIColor greenColor];
-    nameIt.color = @"greenColor";
 }
 
 @end

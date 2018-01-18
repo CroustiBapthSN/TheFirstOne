@@ -14,6 +14,5 @@
 @property (nonatomic,weak) NSMutableArray * peoples;
 
 - (int)moyenneAge:(NSMutableArray*)peoples;
-- (void)changeLabel:(NSInteger*)score;
 
 @end

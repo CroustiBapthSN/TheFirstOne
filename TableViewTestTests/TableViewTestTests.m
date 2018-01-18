@@ -52,15 +52,4 @@
     }];
 }
 
-- (void)testOnView{
-    Person *person = [[Person alloc]init];
-    person.nom = @"HURIER";
-    person.age = 22;    
-}
-
-- (id) asClass:(Class)aClass{
-    return ([self isKindOfClass:aClass]) ? self : nil;
-}
-
-
 @end

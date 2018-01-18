@@ -11,6 +11,8 @@
 
 @interface PersonTest : XCTestCase
 
+@property NSMutableArray* peoples;
+
 @end
 
 @implementation PersonTest
@@ -44,6 +46,27 @@
 
     XCTAssertEqualObjects(person.getPrenom, @"Baptiste");
     XCTAssertEqualObjects(person.getNom, @"HURIER");
+}
+
+- (void) testMoyenneAge {
+    Person * person1 = [[Person alloc] init];
+    Person * person2 = [[Person alloc] init];
+    _peoples = [[NSMutableArray alloc] init];
+    
+    person1.age = 22;
+    [_peoples addObject:person1];
+    person2.age = 28;
+    [_peoples addObject:person2];
+    
+    int cumul = 0;
+    for (int i=0; i < [_peoples count]; i++) {
+        Person * element = [_peoples objectAtIndex:i];
+        cumul += element.getAge;
+    }
+    int moyenne = cumul / [_peoples count];
+    
+    XCTAssertEqual(moyenne, 25);
+    
 }
 
 @end
