@@ -43,7 +43,7 @@ Person * nameIt;
 
     [self.navigationController popViewControllerAnimated:YES];
 }
-- (IBAction)DefaultColor:(id)sender {
+- (IBAction)changeDefaultColor:(id)sender {
     _inputZoneName.backgroundColor = [UIColor grayColor];
     _inputZoneFirstName.backgroundColor = [UIColor grayColor];
     _inputZoneAge.backgroundColor = [UIColor grayColor];
