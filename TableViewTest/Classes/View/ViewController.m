@@ -70,6 +70,7 @@ NSMutableArray * peoples ;
 
 - (int)moyenneAge:(NSMutableArray *)peoples{
     
+    printf([peoples count]);
     if ([peoples count] == 0 ) {
         return 0;
     }
