@@ -10,6 +10,10 @@
 
 @interface TableViewTestUITests : XCTestCase
 
+@property UIViewController *vcToTest;
+@property UIStoryboard *storyToTest;
+
+
 @end
 
 @implementation TableViewTestUITests
