@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4445A2871FFB84010082A179 /* PersonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4445A2861FFB84010082A179 /* PersonTest.m */; };
 		446E3CCF1FDACE4500AE99D7 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 446E3CCE1FDACE4500AE99D7 /* Person.m */; };
 		44F54F011FC851B400FB0ACA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F54F001FC851B400FB0ACA /* AppDelegate.m */; };
 		44F54F041FC851B400FB0ACA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F54F031FC851B400FB0ACA /* ViewController.m */; };
@@ -41,7 +40,6 @@
 /* Begin PBXFileReference section */
 		441D815C2010AB7800ADE735 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		441D815D2010AB7800ADE735 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		4445A2861FFB84010082A179 /* PersonTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonTest.m; sourceTree = "<group>"; };
 		446E3CCD1FDACE4500AE99D7 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		446E3CCE1FDACE4500AE99D7 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		44F54EFC1FC851B400FB0ACA /* TableViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,7 +158,6 @@
 			children = (
 				44F54F1A1FC851B400FB0ACA /* Info.plist */,
 				44F54F181FC851B400FB0ACA /* TableViewTestTests.m */,
-				4445A2861FFB84010082A179 /* PersonTest.m */,
 			);
 			path = TableViewTestTests;
 			sourceTree = "<group>";
@@ -330,7 +327,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4445A2871FFB84010082A179 /* PersonTest.m in Sources */,
 				44F54F191FC851B400FB0ACA /* TableViewTestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
