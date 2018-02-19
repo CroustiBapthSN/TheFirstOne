@@ -1,41 +1,30 @@
 //
-//  TableViewTestTests.m
+//  PersonTest.m
 //  TableViewTestTests
 //
-//  Created by SNCFDev on 24/11/2017.
-//  Copyright © 2017 SNCFDev. All rights reserved.
+//  Created by SNCFDev on 02/01/2018.
+//  Copyright © 2018 SNCFDev. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
-#import "ViewController.h"
 #import "Person.h"
 
+@interface PersonTest : XCTestCase
 
-@interface TableViewTestTests : XCTestCase
-
-@property ViewController *vcToTest;
-@property UIStoryboard *storyToTest;
+@property NSMutableArray* peoples;
 
 @end
 
-@implementation TableViewTestTests
+@implementation PersonTest
 
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
-    //UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    //_vcToTest = ([storyboard.instantiateInitialViewController isKindOfClass:[ViewController class]]) ? (ViewController *)_vcToTest : nil;
-    //_vcToTest = [storyboard asClass:[ViewController class]];
-
-    
-    //UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    //_vcToTest = storyboard.instantiateInitialViewController;
 }
 
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
-    _vcToTest = nil;
 }
 
 - (void)testExample {
@@ -50,4 +39,35 @@
     }];
 }
 
+- (void) testPerson {
+    Person *person = [[Person alloc]init];
+    person.nom = @"Hurier";
+    person.prenom = @"Baptiste";
+    
+    XCTAssertEqualObjects(person.getPrenom, @"Baptiste");
+    XCTAssertEqualObjects(person.getNom, @"HURIER");
+}
+
+- (void) testMoyenneAge {
+    Person * person1 = [[Person alloc] init];
+    Person * person2 = [[Person alloc] init];
+    _peoples = [[NSMutableArray alloc] init];
+    
+    person1.age = 22;
+    [_peoples addObject:person1];
+    person2.age = 28;
+    [_peoples addObject:person2];
+    
+    int cumul = 0;
+    for (int i=0; i < [_peoples count]; i++) {
+        Person * element = [_peoples objectAtIndex:i];
+        cumul += element.getAge;
+    }
+    int moyenne = cumul / [_peoples count];
+    
+    XCTAssertEqual(moyenne, 25);
+    
+}
+
 @end
+
