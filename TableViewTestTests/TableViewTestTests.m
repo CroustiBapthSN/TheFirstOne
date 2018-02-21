@@ -8,10 +8,12 @@
 
 #import <XCTest/XCTest.h>
 #import "Person.h"
+#import "NameTableViewCell.h"
 
 @interface PersonTest : XCTestCase
 
 @property NSMutableArray* peoples;
+@property UILabel* label;
 
 @end
 
@@ -20,6 +22,19 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+
+    
+    Person * person1 = [[Person alloc] init];
+    Person * person2 = [[Person alloc] init];
+    _peoples = [[NSMutableArray alloc] init];
+    person1.nom = @"HURIER";
+    person1.prenom = @"Baptiste";
+    person1.age = 22;
+    [_peoples addObject:person1];
+    person2.age = 28;
+    [_peoples addObject:person2];
+    
+    
 }
 
 - (void)tearDown {
@@ -49,14 +64,7 @@
 }
 
 - (void) testMoyenneAge {
-    Person * person1 = [[Person alloc] init];
-    Person * person2 = [[Person alloc] init];
-    _peoples = [[NSMutableArray alloc] init];
-    
-    person1.age = 22;
-    [_peoples addObject:person1];
-    person2.age = 28;
-    [_peoples addObject:person2];
+
     
     int cumul = 0;
     for (int i=0; i < [_peoples count]; i++) {
@@ -66,8 +74,6 @@
     int moyenne = cumul / [_peoples count];
     
     XCTAssertEqual(moyenne, 25);
-    
 }
 
 @end
-

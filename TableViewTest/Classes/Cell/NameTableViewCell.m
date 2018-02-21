@@ -25,7 +25,7 @@
 - (void) setPerson: (Person*) name {
     _nameLabel.text = name.getNom;
     _prenomLabel.text = name.getPrenom;
-    CIColor *coreColor = [CIColor colorWithString:name.getColor];
+    CIColor * coreColor = [CIColor colorWithString:name.getColor];
     _nameLabel.textColor = [UIColor colorWithCIColor:coreColor];
     _prenomLabel.textColor = [UIColor colorWithCIColor:coreColor];
 
