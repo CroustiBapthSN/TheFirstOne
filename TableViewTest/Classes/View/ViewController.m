@@ -14,6 +14,7 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *nameTableView;
 @property (weak, nonatomic) IBOutlet UILabel *ageLabel;
+@property (weak, nonatomic) IBOutlet UIButton *enregistreButton;
 
 @end
 
@@ -25,6 +26,11 @@ NSMutableArray * peoples ;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self arraySetup];
+    
+    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Background"]];
+    [self.view addSubview:backgroundView];
+    
+    _enregistreButton.layer.cornerRadius = 12;
     _nameTableView.delegate = self;
     _nameTableView.dataSource = self;
 }
@@ -56,6 +62,7 @@ NSMutableArray * peoples ;
 - (void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
     if(editingStyle==UITableViewCellEditingStyleDelete){
         [peoples removeObjectAtIndex:indexPath.row];
+        [self moyenneAge:peoples];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath, nil] withRowAnimation:UITableViewRowAnimationFade];
     }
 }

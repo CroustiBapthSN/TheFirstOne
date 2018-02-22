@@ -26,8 +26,12 @@ Person * nameIt;
 
 -(void)viewDidLoad{
     _inputZoneName.text = _input;
+    _inputZoneName.layer.cornerRadius = 15;
     _inputZoneFirstName.text = _input;
+    _inputZoneFirstName.layer.cornerRadius = 15;
     _inputZoneAge.text = _input;
+    _inputZoneAge.layer.cornerRadius = 15;
+    _setCellButton.layer.cornerRadius = 12;
 }
 
 - (IBAction)testButton:(id)sender {
