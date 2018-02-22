@@ -90,8 +90,33 @@
     
 }
 
-- (UIColor*)getColor:(UILabel*)label{
-    return label.textColor;
+- (void)testEditSuppression{
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    XCUIElement *sEnregistrerButton = app.buttons[@"S'enregistrer"];
+    [sEnregistrerButton tap];
+    
+    XCUIElement *element = [[[[app.otherElements containingType:XCUIElementTypeNavigationBar identifier:@"TableViewTest"] childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element;
+    XCUIElement *textField = [[element childrenMatchingType:XCUIElementTypeTextField] elementBoundByIndex:0];
+    [textField tap];
+    [textField typeText:@"azer"];
+    
+    XCUIElement *textField2 = [[element childrenMatchingType:XCUIElementTypeTextField] elementBoundByIndex:1];
+    [textField2 tap];
+    [textField2 tap];
+    [textField2 typeText:@"azer"];
+    
+    XCUIElement *textField3 = [[element childrenMatchingType:XCUIElementTypeTextField] elementBoundByIndex:2];
+    [textField3 tap];
+    [textField3 tap];
+    [textField3 typeText:@"123"];
+    [sEnregistrerButton tap];
+    [app.navigationBars[@"View"].buttons[@"Edit"] tap];
+    
+    XCUIElementQuery *tablesQuery = app.tables;
+    [tablesQuery/*@START_MENU_TOKEN@*/.buttons[@"Delete AZER, azer"]/*[[".cells.buttons[@\"Delete AZER, azer\"]",".buttons[@\"Delete AZER, azer\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/ tap];
+    [tablesQuery.buttons[@"Delete"] tap];
+    
 }
 
 @end
