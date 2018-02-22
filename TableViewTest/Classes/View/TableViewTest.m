@@ -44,9 +44,9 @@ Person * nameIt;
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (IBAction)DefaultColor:(id)sender {
-    _inputZoneName.backgroundColor = [UIColor grayColor];
-    _inputZoneFirstName.backgroundColor = [UIColor grayColor];
-    _inputZoneAge.backgroundColor = [UIColor grayColor];
+    _inputZoneName.backgroundColor = [UIColor blackColor];
+    _inputZoneFirstName.backgroundColor = [UIColor blackColor];
+    _inputZoneAge.backgroundColor = [UIColor blackColor];
     
 }
 
@@ -56,10 +56,10 @@ Person * nameIt;
     _inputZoneAge.backgroundColor = [UIColor redColor];
 }
 
-- (IBAction)ChangeGreenColor:(id)sender {
-    _inputZoneName.backgroundColor = [UIColor greenColor];
-    _inputZoneFirstName.backgroundColor = [UIColor greenColor];
-    _inputZoneAge.backgroundColor = [UIColor greenColor];
+- (IBAction)ChangeBlueColor:(id)sender {
+    _inputZoneName.backgroundColor = [UIColor blueColor];
+    _inputZoneFirstName.backgroundColor = [UIColor blueColor];
+    _inputZoneAge.backgroundColor = [UIColor blueColor];
 }
 
 @end

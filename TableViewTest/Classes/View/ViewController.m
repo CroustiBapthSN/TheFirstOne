@@ -24,11 +24,17 @@ NSMutableArray * peoples ;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
+    [self arraySetup];
     _nameTableView.delegate = self;
     _nameTableView.dataSource = self;
-    
+}
+
+-(void)arraySetup{
     peoples = [[NSMutableArray alloc] init];
+}
+
+- (IBAction)editButton:(id)sender {
+    _nameTableView.editing = !_nameTableView.editing;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,6 +48,18 @@ NSMutableArray * peoples ;
     _ageLabel.text = [NSString stringWithFormat:@"%d",value];
     
 }
+#pragma mark - UITableView DataSource Methods
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return peoples.count;
+}
+
+- (void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+    if(editingStyle==UITableViewCellEditingStyleDelete){
+        [peoples removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath, nil] withRowAnimation:UITableViewRowAnimationFade];
+    }
+}
+
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     
@@ -49,12 +67,10 @@ NSMutableArray * peoples ;
     Person * name = [peoples objectAtIndex:indexPath.row];
     //NSString * name = [peoples objectAtIndex:indexPath.row].nom;
     [cell setPerson:name];
-    
+    cell.contentView.layer.cornerRadius = 2;
+    cell.contentView.layer.borderWidth = 1;
+    cell.contentView.layer.borderColor = [UIColor blackColor].CGColor;
     return cell;
-}
-
-- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [peoples count];
 }
 
 - (void) addToList:(Person*)people{
@@ -83,5 +99,6 @@ NSMutableArray * peoples ;
     
     return moyenne;
 }
+
 
 @end
