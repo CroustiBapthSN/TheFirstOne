@@ -71,9 +71,7 @@ NSMutableArray * peoples ;
     Person * name = [peoples objectAtIndex:indexPath.row];
     //NSString * name = [peoples objectAtIndex:indexPath.row].nom;
     [cell setPerson:name];
-    cell.contentView.layer.cornerRadius = 2;
-    cell.contentView.layer.borderWidth = 1;
-    cell.contentView.layer.borderColor = [UIColor blackColor].CGColor;
+    cell.contentView.layer.cornerRadius = 12;
     return cell;
 }
 

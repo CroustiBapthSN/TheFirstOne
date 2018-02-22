@@ -65,7 +65,6 @@
 
 - (void) testMoyenneAge {
 
-    
     int cumul = 0;
     for (int i=0; i < [_peoples count]; i++) {
         Person * element = [_peoples objectAtIndex:i];
