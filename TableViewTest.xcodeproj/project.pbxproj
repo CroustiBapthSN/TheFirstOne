@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14DFCEA0EE93BA3BEAF4F163 /* Pods_TableViewTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039686C576C74B034DA79C5C /* Pods_TableViewTest.framework */; };
+		2DEAE051203EFF74006EDEE3 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2DEAE050203EFF74006EDEE3 /* Background.jpg */; };
 		446E3CCF1FDACE4500AE99D7 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 446E3CCE1FDACE4500AE99D7 /* Person.m */; };
 		44F54F011FC851B400FB0ACA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F54F001FC851B400FB0ACA /* AppDelegate.m */; };
 		44F54F041FC851B400FB0ACA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F54F031FC851B400FB0ACA /* ViewController.m */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		039686C576C74B034DA79C5C /* Pods_TableViewTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableViewTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DEAE050203EFF74006EDEE3 /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Background.jpg; path = ../../Background.jpg; sourceTree = "<group>"; };
 		441D815C2010AB7800ADE735 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		441D815D2010AB7800ADE735 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		446E3CCD1FDACE4500AE99D7 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -104,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DEAE04F203EFF5E006EDEE3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2DEAE050203EFF74006EDEE3 /* Background.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		2EF5B0CBC10460C650DD869F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +159,7 @@
 		44F54EF31FC851B400FB0ACA = {
 			isa = PBXGroup;
 			children = (
+				2DEAE04F203EFF5E006EDEE3 /* Images */,
 				44F54EFE1FC851B400FB0ACA /* TableViewTest */,
 				44F54F171FC851B400FB0ACA /* TableViewTestTests */,
 				44F54F221FC851B400FB0ACA /* TableViewTestUITests */,
@@ -337,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44F54F0C1FC851B400FB0ACA /* LaunchScreen.storyboard in Resources */,
+				2DEAE051203EFF74006EDEE3 /* Background.jpg in Resources */,
 				44F54F091FC851B400FB0ACA /* Assets.xcassets in Resources */,
 				44F54F071FC851B400FB0ACA /* Main.storyboard in Resources */,
 			);

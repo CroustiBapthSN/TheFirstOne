@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *nameTableView;
 @property (weak, nonatomic) IBOutlet UILabel *ageLabel;
 @property (weak, nonatomic) IBOutlet UIButton *enregistreButton;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -27,8 +28,7 @@ NSMutableArray * peoples ;
     // Do any additional setup after loading the view, typically from a nib.
     [self arraySetup];
     
-    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Background"]];
-    [self.view addSubview:backgroundView];
+    
     
     _enregistreButton.layer.cornerRadius = 12;
     _nameTableView.delegate = self;
